@@ -1,0 +1,53 @@
+skeleton.png
+size:1455,649
+filter:Linear,Linear
+pma:true
+Attack Pose 1
+bounds:726,205,305,442
+offsets:83,0,500,500
+Swing 1
+bounds:2,10,637,722
+offsets:266,23,1000,800
+rotate:90
+Swing 2
+bounds:1036,514,363,133
+offsets:322,27,1000,800
+Weapon
+bounds:1165,2,104,229
+offsets:198,136,500,500
+rotate:90
+arm
+bounds:1310,328,57,131
+offsets:207,95,500,500
+rotate:90
+cape
+bounds:1033,222,290,275
+offsets:72,0,500,500
+rotate:90
+ear left
+bounds:1310,387,125,139
+offsets:112,293,500,500
+rotate:90
+ear right
+bounds:1310,182,128,144
+offsets:302,281,500,500
+head
+bounds:726,17,223,186
+offsets:166,229,500,500
+leg left
+bounds:1401,514,52,133
+offsets:217,0,500,500
+leg right
+bounds:1396,58,53,122
+offsets:285,0,500,500
+tail
+bounds:1165,108,112,125
+offsets:160,6,500,500
+rotate:90
+tie
+bounds:951,52,151,83
+offsets:196,165,500,500
+rotate:90
+torso
+bounds:1036,6,127,214
+offsets:216,70,500,500
