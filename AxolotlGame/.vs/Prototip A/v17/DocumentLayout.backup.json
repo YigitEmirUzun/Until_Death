@@ -1,0 +1,119 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\azazl\\OneDrive\\Masa\u00FCst\u00FC\\BTK Unity \u0130leri D\u00FCzey\\Prototip A\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{04CC88E0-FAE1-904F-F253-1BF607AA9AB9}|Assembly-CSharp.csproj|C:\\Users\\azazl\\OneDrive\\Masa\u00FCst\u00FC\\BTK Unity \u0130leri D\u00FCzey\\Prototip A\\assets\\scripts\\axolotl\\playeranimations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04CC88E0-FAE1-904F-F253-1BF607AA9AB9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\axolotl\\playeranimations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04CC88E0-FAE1-904F-F253-1BF607AA9AB9}|Assembly-CSharp.csproj|c:\\users\\azazl\\onedrive\\masa\u00FCst\u00FC\\btk unity \u0130leri d\u00FCzey\\prototip a\\assets\\scripts\\axolotl\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04CC88E0-FAE1-904F-F253-1BF607AA9AB9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\axolotl\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04CC88E0-FAE1-904F-F253-1BF607AA9AB9}|Assembly-CSharp.csproj|C:\\Users\\azazl\\OneDrive\\Masa\u00FCst\u00FC\\BTK Unity \u0130leri D\u00FCzey\\Prototip A\\assets\\scripts\\axolotl\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04CC88E0-FAE1-904F-F253-1BF607AA9AB9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\axolotl\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04CC88E0-FAE1-904F-F253-1BF607AA9AB9}|Assembly-CSharp.csproj|C:\\Users\\azazl\\OneDrive\\Masa\u00FCst\u00FC\\BTK Unity \u0130leri D\u00FCzey\\Prototip A\\assets\\scripts\\axolotl\\hangdetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04CC88E0-FAE1-904F-F253-1BF607AA9AB9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\axolotl\\hangdetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04CC88E0-FAE1-904F-F253-1BF607AA9AB9}|Assembly-CSharp.csproj|C:\\Users\\azazl\\OneDrive\\Masa\u00FCst\u00FC\\BTK Unity \u0130leri D\u00FCzey\\Prototip A\\assets\\scripts\\floordetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04CC88E0-FAE1-904F-F253-1BF607AA9AB9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\floordetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04CC88E0-FAE1-904F-F253-1BF607AA9AB9}|Assembly-CSharp.csproj|C:\\Users\\azazl\\OneDrive\\Masa\u00FCst\u00FC\\BTK Unity \u0130leri D\u00FCzey\\Prototip A\\assets\\scripts\\camera\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04CC88E0-FAE1-904F-F253-1BF607AA9AB9}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camera\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\azazl\\OneDrive\\Masa\u00FCst\u00FC\\BTK Unity \u0130leri D\u00FCzey\\Prototip A\\Assets\\Scripts\\Axolotl\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Axolotl\\PlayerController.cs",
+              "ToolTip": "C:\\Users\\azazl\\OneDrive\\Masa\u00FCst\u00FC\\BTK Unity \u0130leri D\u00FCzey\\Prototip A\\Assets\\Scripts\\Axolotl\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Axolotl\\PlayerController.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAwwHgAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T12:06:05.632Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerAnimations.cs",
+              "DocumentMoniker": "C:\\Users\\azazl\\OneDrive\\Masa\u00FCst\u00FC\\BTK Unity \u0130leri D\u00FCzey\\Prototip A\\Assets\\Scripts\\Axolotl\\PlayerAnimations.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Axolotl\\PlayerAnimations.cs",
+              "ToolTip": "C:\\Users\\azazl\\OneDrive\\Masa\u00FCst\u00FC\\BTK Unity \u0130leri D\u00FCzey\\Prototip A\\Assets\\Scripts\\Axolotl\\PlayerAnimations.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Axolotl\\PlayerAnimations.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAgwDMAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T20:59:48.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CameraFollow.cs",
+              "DocumentMoniker": "C:\\Users\\azazl\\OneDrive\\Masa\u00FCst\u00FC\\BTK Unity \u0130leri D\u00FCzey\\Prototip A\\Assets\\Scripts\\Camera\\CameraFollow.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Camera\\CameraFollow.cs",
+              "ToolTip": "C:\\Users\\azazl\\OneDrive\\Masa\u00FCst\u00FC\\BTK Unity \u0130leri D\u00FCzey\\Prototip A\\Assets\\Scripts\\Camera\\CameraFollow.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Camera\\CameraFollow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T16:38:45.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HangDetector.cs",
+              "DocumentMoniker": "C:\\Users\\azazl\\OneDrive\\Masa\u00FCst\u00FC\\BTK Unity \u0130leri D\u00FCzey\\Prototip A\\Assets\\Scripts\\Axolotl\\HangDetector.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Axolotl\\HangDetector.cs",
+              "ToolTip": "C:\\Users\\azazl\\OneDrive\\Masa\u00FCst\u00FC\\BTK Unity \u0130leri D\u00FCzey\\Prototip A\\Assets\\Scripts\\Axolotl\\HangDetector.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Axolotl\\HangDetector.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAYwB0AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T15:13:24.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerAttack.cs",
+              "DocumentMoniker": "C:\\Users\\azazl\\OneDrive\\Masa\u00FCst\u00FC\\BTK Unity \u0130leri D\u00FCzey\\Prototip A\\Assets\\Scripts\\Axolotl\\PlayerAttack.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Axolotl\\PlayerAttack.cs",
+              "ToolTip": "C:\\Users\\azazl\\OneDrive\\Masa\u00FCst\u00FC\\BTK Unity \u0130leri D\u00FCzey\\Prototip A\\Assets\\Scripts\\Axolotl\\PlayerAttack.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Axolotl\\PlayerAttack.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwCUAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T16:28:41.268Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FloorDetector.cs",
+              "DocumentMoniker": "C:\\Users\\azazl\\OneDrive\\Masa\u00FCst\u00FC\\BTK Unity \u0130leri D\u00FCzey\\Prototip A\\Assets\\Scripts\\FloorDetector.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\FloorDetector.cs",
+              "ToolTip": "C:\\Users\\azazl\\OneDrive\\Masa\u00FCst\u00FC\\BTK Unity \u0130leri D\u00FCzey\\Prototip A\\Assets\\Scripts\\FloorDetector.cs",
+              "RelativeToolTip": "Assets\\Scripts\\FloorDetector.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-15T12:10:24.687Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
