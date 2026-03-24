@@ -5,10 +5,12 @@ public class PlayerAttack : MonoBehaviour
 {
     GameObject Player;
     Rigidbody2D PlayerRb;
+    PlayerController playerController;
     void Awake()
     {
         Player = GameObject.Find("Axolotl");
         PlayerRb = Player.GetComponent<Rigidbody2D>();
+        playerController = Player.GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
@@ -24,6 +26,8 @@ public class PlayerAttack : MonoBehaviour
         {
             if (collision.gameObject.CompareTag("JumpFlower"))
             {
+                playerController.canDash = true;
+                PlayerRb.linearVelocity = Vector3.zero;
                 if(Player.transform.position.y > collision.gameObject.transform.position.y)
                 {
                     Vector3 distance = Player.transform.position - collision.gameObject.transform.position;

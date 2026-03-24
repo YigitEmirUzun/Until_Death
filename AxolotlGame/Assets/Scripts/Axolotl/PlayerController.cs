@@ -14,21 +14,28 @@ public class PlayerController : MonoBehaviour
     FloorDetector floorDetector;
     HangDetector hangDetector;
 
-    public Transform UpAttackPosition;
-    public Transform DownAttackPosition;
-    public Transform AttackPosition;
-    bool IsRight = true;
-    bool Hang = false;
-    public bool moving;
-    public bool Attacking = false;
-    public bool canAttack = true;
+    [Header("AttackHitbox")]
+    [SerializeField] public Transform UpAttackPosition;
+    [SerializeField] public Transform DownAttackPosition;
+    [SerializeField] public Transform AttackPosition;
+    [SerializeField] public GameObject VerticalAttack;
+    [SerializeField] public GameObject HorizontalAttack;
 
-    public GameObject VerticalAttack;
-    public GameObject HorizontalAttack;
+    [Header("Player Situations")]
+    [SerializeField]bool IsRight = true;
+    [SerializeField] bool Hang = false;
+    [SerializeField] public bool moving;
+    [SerializeField] public bool Attacking = false;
+    [SerializeField] public bool canAttack = true;
+    [SerializeField] public bool isDashing = false;
+    [SerializeField] public bool canDash = true;
+    [SerializeField] public bool Jumping = false;
 
-    public Vector2 moveInput;
-    public float speed;
-    public float JumpForce;
+
+    [Header("Player Variables")]
+    [SerializeField] public Vector2 moveInput;
+    [SerializeField] public float speed;
+    [SerializeField] public float JumpForce;
    
     void Awake()
     {
@@ -43,21 +50,24 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         Debug.Log(moveInput.x);
+        if (floorDetector.OnFloor & !isDashing) { canDash = true; }
     }
 
     private void FixedUpdate()
     {
-        if(moveInput.x >= 0.6 || moveInput.x <= -0.6)
+        // Hareket
+        if((moveInput.x >= 0.6 || moveInput.x <= -0.6) && !isDashing)
         {
             rb.linearVelocityX = moveInput.x * speed;
             moving = true;
         }
         else { moving = false; }
 
-            DirectionControl();
+        // Yön kontrol fonksiyonu
+        DirectionControl();
 
 
-
+        // Hang Skilli Fiziksel Hareketi
         if (Hang)
         {
             if(moveInput.y > 0.6)
@@ -78,6 +88,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnEnable()
     {
+        // Inputlarý ekleme
         action.Player.Enable();
 
         action.Player.Move.performed += OnMovePerformed;
@@ -91,6 +102,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnDisable()
     {
+        // Inputlarý disable etme
         action.Player.Disable();
 
         action.Player.Move.performed -= OnMovePerformed;
@@ -102,6 +114,7 @@ public class PlayerController : MonoBehaviour
         action.Player.Attack.performed -= OnAttackPerformed;
     }
 
+    // Move Input
     void OnMovePerformed(InputAction.CallbackContext context)
     {
         moveInput = context.ReadValue<Vector2>();
@@ -118,23 +131,36 @@ public class PlayerController : MonoBehaviour
         else { rb.linearVelocityX = 0; }
     }
 
+    // Dash Input
     void OnDashPerformed(InputAction.CallbackContext context)
     {
-        rb.AddForce(new Vector2(25, 0), ForceMode2D.Impulse);
-        StartCoroutine(DashRoutine(0.2f));
+        if (canDash)
+        {
+            if (IsRight) 
+            {
+                rb.linearVelocityX = 0;
+                rb.AddForce(new Vector2(30, 0), ForceMode2D.Impulse);
+                isDashing = true;
+                canDash = false;
+                StartCoroutine(DashRoutine(0.2f));
+            }
+            else
+            {
+                rb.linearVelocityX = 0;
+                rb.AddForce(new Vector2(-30, 0), ForceMode2D.Impulse);
+                isDashing = true;
+                canDash = false;
+                StartCoroutine(DashRoutine(0.2f));
+            }
+        }
     }
 
-    IEnumerator DashRoutine(float time)
-    {
-        yield return new WaitForSeconds(time);
-        rb.linearVelocityX = 0f;
-    }
+    // HangSkill Input
     void OnHangPerformed(InputAction.CallbackContext context)
     {
         if (hangDetector.canHang)
         {
             Time.timeScale = 0.1f;
-
         }
     }
 
@@ -148,6 +174,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // Attack Input
     void OnAttackPerformed(InputAction.CallbackContext context)
     {
  
@@ -170,12 +197,23 @@ public class PlayerController : MonoBehaviour
         
     }
 
+    // Jump Input
     void OnJumpPerformed(InputAction.CallbackContext context)
     {
         if (floorDetector.OnFloor)
         {
             rb.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
+            Jumping = true;
+            StartCoroutine (JumpRoutine());
         }
+    }
+
+    // Coroutines
+    IEnumerator DashRoutine(float time)
+    {
+        yield return new WaitForSeconds(time);
+        isDashing = false;
+        rb.linearVelocityX = 0f;
     }
 
     IEnumerator AttackColliderRoutine(GameObject AttackObject, Transform AttackPosition)
@@ -187,12 +225,20 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator AttackRoutine()
     {
-        yield return new WaitForSeconds(0.4f);
-        Attacking = false;
         yield return new WaitForSeconds(0.2f);
+        Attacking = false;
+        yield return new WaitForSeconds(0.3f);
         canAttack = true;
     }
 
+    IEnumerator JumpRoutine()
+    {
+        yield return new WaitForSeconds(0.4f);
+        Jumping = false;
+    }
+
+
+    // Fonksiyonlar
     public void DirectionControl()
     {
         if (moveInput.x > 0.5)

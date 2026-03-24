@@ -9,6 +9,7 @@ TagManager:
   - JumpFlower
   - HangFlower
   - HangDetector
+  - PlayerAttack
   layers:
   - Default
   - TransparentFX

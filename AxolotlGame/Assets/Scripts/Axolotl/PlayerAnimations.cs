@@ -15,6 +15,7 @@ public class PlayerAnimations : MonoBehaviour
         idle,
         run,
         jump,
+        fall,
         attack
     }
 
@@ -48,8 +49,18 @@ public class PlayerAnimations : MonoBehaviour
             currentState = PlayerState.idle;
         }
 
+        if (playerController.Jumping)
+        {
+            currentState = PlayerState.jump;
+        }
+
+        if (!floorDetector.OnFloor && !playerController.Jumping && !playerController.Attacking)
+        {
+            currentState = PlayerState.fall;
+        }
 
 
+        // Animasyon Degisimi
         if (currentState != lastState)
         {
             switch (currentState)
@@ -65,8 +76,18 @@ public class PlayerAnimations : MonoBehaviour
                     break;
 
                 case PlayerState.attack:
-                    spineAnim.AnimationState.SetAnimation(0, "Attack", false);
-                    StartCoroutine(AnimationDelay(0f, 0.5f, PlayerState.attack));
+                    spineAnim.AnimationState.SetAnimation(0, "Attack Sideways", false);
+                    StartCoroutine(AnimationDelay(0f, 1f, PlayerState.attack));
+                    break;
+
+                case PlayerState.jump:
+                    spineAnim.AnimationState.SetAnimation(0, "Jump", false);
+                    StartCoroutine(AnimationDelay(0f, 1f, PlayerState.jump));
+                    break;
+
+                case PlayerState.fall:
+                    spineAnim.AnimationState.SetAnimation(0, "Fall", false);
+                    StartCoroutine(AnimationDelay(0f, 0.5f, PlayerState.fall));
                     break;
             }
 

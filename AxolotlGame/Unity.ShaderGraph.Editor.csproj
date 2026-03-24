@@ -611,8 +611,8 @@
     <Compile Include="Library\PackageCache\com.unity.shadergraph@41211273cdd1\Editor\Data\Nodes\Input\Basic\Vector1Node.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@41211273cdd1\Editor\Data\Util\Identifier.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@41211273cdd1\Editor\Data\Nodes\Artistic\Normal\NormalFromTextureNode.cs" />
-    <Compile Include="Library\PackageCache\com.unity.shadergraph@41211273cdd1\Editor\Data\Nodes\Utility\PreviewNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@41211273cdd1\Editor\Data\Graphs\GradientMaterialSlot.cs" />
+    <Compile Include="Library\PackageCache\com.unity.shadergraph@41211273cdd1\Editor\Data\Nodes\Utility\PreviewNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@41211273cdd1\Editor\Data\Nodes\Input\Texture\SampleTexture2DLODNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@41211273cdd1\Editor\Data\Nodes\Procedural\Noise\GradientNoiseNode.cs" />
     <Compile Include="Library\PackageCache\com.unity.shadergraph@41211273cdd1\Editor\Data\Graphs\SamplerStateShaderProperty.cs" />
