@@ -16,7 +16,8 @@ public class PlayerAnimations : MonoBehaviour
         run,
         jump,
         fall,
-        attack
+        attack,
+        dash
     }
 
     PlayerState currentState;
@@ -34,30 +35,32 @@ public class PlayerAnimations : MonoBehaviour
     void Update()
     {
 
-        if (playerController.Attacking)
+        if (playerController.isDashing)
+        {
+            currentState = PlayerState.dash;
+        }
+        if (playerController.Attacking && !playerController.isDashing)
         {
             currentState = PlayerState.attack;
         }
-
-        if (playerController.moving && floorDetector.OnFloor && !playerController.Attacking)
+        else if (playerController.moving && floorDetector.OnFloor && !playerController.Attacking && !playerController.isDashing)
         {
             currentState = PlayerState.run;
         }
-
-        if (!playerController.moving && floorDetector.OnFloor && !playerController.Attacking)
+        else if (!playerController.moving && floorDetector.OnFloor && !playerController.Attacking && !playerController.isDashing)
         {
             currentState = PlayerState.idle;
         }
-
-        if (playerController.Jumping)
+        else if (playerController.Jumping && !playerController.isDashing)
         {
             currentState = PlayerState.jump;
         }
-
-        if (!floorDetector.OnFloor && !playerController.Jumping && !playerController.Attacking)
+        else if (!floorDetector.OnFloor && !playerController.Jumping && !playerController.Attacking && !playerController.isDashing)
         {
             currentState = PlayerState.fall;
         }
+
+
 
 
         // Animasyon Degisimi
@@ -88,6 +91,11 @@ public class PlayerAnimations : MonoBehaviour
                 case PlayerState.fall:
                     spineAnim.AnimationState.SetAnimation(0, "Fall", false);
                     StartCoroutine(AnimationDelay(0f, 0.5f, PlayerState.fall));
+                    break;
+
+                case PlayerState.dash:
+                    spineAnim.AnimationState.SetAnimation(0, "Dash", false);
+                    StartCoroutine(AnimationDelay(0f, 2f, PlayerState.dash));
                     break;
             }
 

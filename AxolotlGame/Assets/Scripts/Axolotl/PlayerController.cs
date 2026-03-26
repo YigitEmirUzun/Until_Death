@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     FloorDetector floorDetector;
     HangDetector hangDetector;
+    AxolotlHealth healthsc;
 
     [Header("AttackHitbox")]
     [SerializeField] public Transform UpAttackPosition;
@@ -32,6 +33,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public bool Jumping = false;
 
 
+
     [Header("Player Variables")]
     [SerializeField] public Vector2 moveInput;
     [SerializeField] public float speed;
@@ -43,6 +45,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         floorDetector = GetComponentInChildren<FloorDetector>();
         hangDetector = GetComponentInChildren<HangDetector>();
+        healthsc = GetComponent<AxolotlHealth>();
         
     }
 
@@ -70,10 +73,10 @@ public class PlayerController : MonoBehaviour
         // Hang Skilli Fiziksel Hareketi
         if (Hang)
         {
-            if(moveInput.y > 0.6)
+            if(moveInput.y >= 0.6)
             {
                 rb.linearVelocity = Vector2.zero;
-                rb.AddForce(new Vector2(moveInput.x * 30, 30), ForceMode2D.Impulse);
+                rb.AddForce(new Vector2(moveInput.x * 30, 35), ForceMode2D.Impulse);
                 Hang = false;
             }
             else
@@ -123,24 +126,27 @@ public class PlayerController : MonoBehaviour
     void OnMoveCanceled(InputAction.CallbackContext context)
     {
         moveInput = Vector2.zero;
-        if (floorDetector.OnFloor)
+        if (floorDetector.OnFloor && !isDashing)
         {
             if (IsRight) { rb.linearVelocityX = 5f; }
             else { rb.linearVelocityX = -5f; }
         }
-        else { rb.linearVelocityX = 0; }
+        else if (!isDashing) { rb.linearVelocityX = 0; }
     }
 
     // Dash Input
     void OnDashPerformed(InputAction.CallbackContext context)
     {
-        if (canDash)
+        if (canDash && healthsc.currentStamina > 10)
         {
+            isDashing = true;
+            healthsc.canRegenStamina = false;
+            healthsc.staminaRegenTimer = 0f;
+            healthsc.currentStamina -= 20;
             if (IsRight) 
             {
                 rb.linearVelocityX = 0;
                 rb.AddForce(new Vector2(30, 0), ForceMode2D.Impulse);
-                isDashing = true;
                 canDash = false;
                 StartCoroutine(DashRoutine(0.2f));
             }
@@ -148,7 +154,6 @@ public class PlayerController : MonoBehaviour
             {
                 rb.linearVelocityX = 0;
                 rb.AddForce(new Vector2(-30, 0), ForceMode2D.Impulse);
-                isDashing = true;
                 canDash = false;
                 StartCoroutine(DashRoutine(0.2f));
             }
@@ -233,7 +238,7 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator JumpRoutine()
     {
-        yield return new WaitForSeconds(0.4f);
+        yield return new WaitForSeconds(0.45f);
         Jumping = false;
     }
 

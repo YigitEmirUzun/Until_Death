@@ -19,17 +19,17 @@ public class PlayerAttack : MonoBehaviour
         
     }
 
-
+    // Hit Flower
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (PlayerRb != null)
         {
             if (collision.gameObject.CompareTag("JumpFlower"))
             {
-                playerController.canDash = true;
                 PlayerRb.linearVelocity = Vector3.zero;
                 if(Player.transform.position.y > collision.gameObject.transform.position.y)
                 {
+                    playerController.canDash = true;
                     Vector3 distance = Player.transform.position - collision.gameObject.transform.position;
                     if(distance.y < 3 ){ distance = new Vector3(distance.x, 3f, 0f); }
                     PlayerRb.linearVelocity = new Vector2(0f,0f);
