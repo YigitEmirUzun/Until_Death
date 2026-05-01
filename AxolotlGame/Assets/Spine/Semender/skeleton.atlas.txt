@@ -1,0 +1,24 @@
+skeleton.png
+size:545,311
+filter:Linear,Linear
+pma:true
+Cape
+bounds:2,40,186,269
+offsets:163,2,500,500
+Ear Left
+bounds:336,2,66,97
+offsets:134,259,500,500
+rotate:90
+Ear Right
+bounds:435,4,64,97
+offsets:335,244,500,500
+rotate:90
+Eyes
+bounds:336,70,156,65
+offsets:236,263,500,500
+Head
+bounds:336,137,207,172
+offsets:179,227,500,500
+Torso
+bounds:190,21,144,288
+offsets:207,0,500,500

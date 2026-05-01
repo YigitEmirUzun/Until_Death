@@ -3,20 +3,72 @@
   "WorkspaceRootPath": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\assets\\scripts\\axolotl\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\axolotl\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|c:\\users\\azazl\\onedrive\\belgeler\\github\\axolotlgame\\axolotlgame\\assets\\scripts\\axolotl\\axolotlhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\assets\\scripts\\axolotl\\axolotlhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\axolotl\\axolotlhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|c:\\users\\azazl\\onedrive\\belgeler\\github\\axolotlgame\\axolotlgame\\assets\\scripts\\axolotl\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\axolotl\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\assets\\scripts\\axolotl\\playeranimations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\axolotl\\playeranimations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|c:\\users\\azazl\\onedrive\\belgeler\\github\\axolotlgame\\axolotlgame\\assets\\scripts\\dialogue\\npcdialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialogue\\npcdialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\assets\\scripts\\axolotl\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\axolotl\\playerattack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\assets\\scripts\\dialogue\\dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialogue\\dialoguemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\assets\\scripts\\axolotl\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\axolotl\\playercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\assets\\scripts\\dialogue\\dialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialogue\\dialogue.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\assets\\scripts\\scenemanagers\\endscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scenemanagers\\endscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\assets\\scripts\\scenemanagers\\startscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scenemanagers\\startscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\assets\\scripts\\camera\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\camera\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\assets\\scripts\\ui\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\assets\\scripts\\axolotl\\spawnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\axolotl\\spawnmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\assets\\scripts\\dialogue\\panelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dialogue\\panelcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\assets\\scripts\\interface\\idamageable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\interface\\idamageable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\assets\\scripts\\axolotl\\walldetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\axolotl\\walldetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\assets\\scripts\\enemies\\thornrock\\thornrock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\thornrock\\thornrock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\assets\\scripts\\enemies\\thornrock\\thorn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemies\\thornrock\\thorn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EE433BAA-FA0C-E265-D4DB-98B25AB4AD02}|Assembly-CSharp.csproj|C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\assets\\scripts\\axolotl\\floordetector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -34,85 +86,239 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
+              "Title": "PlayerController.cs",
+              "DocumentMoniker": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Axolotl\\PlayerController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Axolotl\\PlayerController.cs",
+              "ToolTip": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Axolotl\\PlayerController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Axolotl\\PlayerController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwNQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T12:06:55.069Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EndScene.cs",
+              "DocumentMoniker": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\SceneManagers\\EndScene.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SceneManagers\\EndScene.cs",
+              "ToolTip": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\SceneManagers\\EndScene.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SceneManagers\\EndScene.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T09:55:04.422Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerAttack.cs",
+              "DocumentMoniker": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Axolotl\\PlayerAttack.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Axolotl\\PlayerAttack.cs",
+              "ToolTip": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Axolotl\\PlayerAttack.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Axolotl\\PlayerAttack.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACQAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T12:07:59.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "WallDetector.cs",
+              "DocumentMoniker": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Axolotl\\WallDetector.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Axolotl\\WallDetector.cs",
+              "ToolTip": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Axolotl\\WallDetector.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Axolotl\\WallDetector.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-09T15:48:48.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "AxolotlHealth.cs",
               "DocumentMoniker": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Axolotl\\AxolotlHealth.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Axolotl\\AxolotlHealth.cs",
               "ToolTip": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Axolotl\\AxolotlHealth.cs",
               "RelativeToolTip": "Assets\\Scripts\\Axolotl\\AxolotlHealth.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwCAAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBwAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-26T19:21:01.856Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "FloorDetector.cs",
-              "DocumentMoniker": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Axolotl\\FloorDetector.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Axolotl\\FloorDetector.cs",
-              "ToolTip": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Axolotl\\FloorDetector.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Axolotl\\FloorDetector.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "CameraFollow.cs",
+              "DocumentMoniker": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Camera\\CameraFollow.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Camera\\CameraFollow.cs",
+              "ToolTip": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Camera\\CameraFollow.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Camera\\CameraFollow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T12:17:02.205Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-18T10:45:44.11Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "HangDetector.cs",
-              "DocumentMoniker": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Axolotl\\HangDetector.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Axolotl\\HangDetector.cs",
-              "ToolTip": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Axolotl\\HangDetector.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Axolotl\\HangDetector.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T12:16:59.069Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "PlayerAnimations.cs",
               "DocumentMoniker": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Axolotl\\PlayerAnimations.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Axolotl\\PlayerAnimations.cs",
               "ToolTip": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Axolotl\\PlayerAnimations.cs",
               "RelativeToolTip": "Assets\\Scripts\\Axolotl\\PlayerAnimations.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAEwC8AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-24T12:16:51.693Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PlayerAttack.cs",
-              "DocumentMoniker": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Axolotl\\PlayerAttack.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Axolotl\\PlayerAttack.cs",
-              "ToolTip": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Axolotl\\PlayerAttack.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Axolotl\\PlayerAttack.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB8AAAA0AAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "Dialogue.cs",
+              "DocumentMoniker": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Dialogue\\Dialogue.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Dialogue\\Dialogue.cs",
+              "ToolTip": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Dialogue\\Dialogue.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Dialogue\\Dialogue.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T12:07:59.722Z",
+              "WhenOpened": "2026-04-18T11:30:00.962Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NPCDialogue.cs",
+              "DocumentMoniker": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Dialogue\\NPCDialogue.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Dialogue\\NPCDialogue.cs",
+              "ToolTip": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Dialogue\\NPCDialogue.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Dialogue\\NPCDialogue.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwCoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T11:31:13.52Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PlayerController.cs",
-              "DocumentMoniker": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Axolotl\\PlayerController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Axolotl\\PlayerController.cs",
-              "ToolTip": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Axolotl\\PlayerController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Axolotl\\PlayerController.cs",
-              "ViewState": "AgIAAIgAAAAAAAAAAAAwwJAAAAAqAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "DialogueManager.cs",
+              "DocumentMoniker": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Dialogue\\DialogueManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Dialogue\\DialogueManager.cs",
+              "ToolTip": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Dialogue\\DialogueManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Dialogue\\DialogueManager.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowFEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-24T12:06:55.069Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-18T11:28:23.206Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ThornRock.cs",
+              "DocumentMoniker": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Enemies\\ThornRock\\ThornRock.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\ThornRock\\ThornRock.cs",
+              "ToolTip": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Enemies\\ThornRock\\ThornRock.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemies\\ThornRock\\ThornRock.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwAUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T14:24:44.616Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Thorn.cs",
+              "DocumentMoniker": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Enemies\\ThornRock\\Thorn.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemies\\ThornRock\\Thorn.cs",
+              "ToolTip": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Enemies\\ThornRock\\Thorn.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemies\\ThornRock\\Thorn.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T14:51:01.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UIManager.cs",
+              "DocumentMoniker": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\UI\\UIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\UIManager.cs",
+              "ToolTip": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\UI\\UIManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\UIManager.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T12:40:58.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "StartScene.cs",
+              "DocumentMoniker": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\SceneManagers\\StartScene.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SceneManagers\\StartScene.cs",
+              "ToolTip": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\SceneManagers\\StartScene.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SceneManagers\\StartScene.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAgwBcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-20T13:37:25.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IDamageable.cs",
+              "DocumentMoniker": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Interface\\IDamageable.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Interface\\IDamageable.cs",
+              "ToolTip": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Interface\\IDamageable.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Interface\\IDamageable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T16:03:53.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SpawnManager.cs",
+              "DocumentMoniker": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Axolotl\\SpawnManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Axolotl\\SpawnManager.cs",
+              "ToolTip": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Axolotl\\SpawnManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Axolotl\\SpawnManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-19T10:39:11.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "PanelController.cs",
+              "DocumentMoniker": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Dialogue\\PanelController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Dialogue\\PanelController.cs",
+              "ToolTip": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Dialogue\\PanelController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Dialogue\\PanelController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-18T12:37:07.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FloorDetector.cs",
+              "DocumentMoniker": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Axolotl\\FloorDetector.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Axolotl\\FloorDetector.cs",
+              "ToolTip": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Axolotl\\FloorDetector.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Axolotl\\FloorDetector.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T12:17:02.205Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "HangDetector.cs",
+              "DocumentMoniker": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Axolotl\\HangDetector.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Axolotl\\HangDetector.cs",
+              "ToolTip": "C:\\Users\\azazl\\OneDrive\\Belgeler\\GitHub\\AxolotlGame\\AxolotlGame\\Assets\\Scripts\\Axolotl\\HangDetector.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Axolotl\\HangDetector.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-24T12:16:59.069Z"
             }
           ]
         }

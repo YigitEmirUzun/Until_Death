@@ -13,7 +13,9 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D rb;
     FloorDetector floorDetector;
     HangDetector hangDetector;
+    WallDetector wallDetector;
     AxolotlHealth healthsc;
+
 
     [Header("AttackHitbox")]
     [SerializeField] public Transform UpAttackPosition;
@@ -23,7 +25,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public GameObject HorizontalAttack;
 
     [Header("Player Situations")]
-    [SerializeField]bool IsRight = true;
+    [SerializeField] bool IsRight = true;
     [SerializeField] bool Hang = false;
     [SerializeField] public bool moving;
     [SerializeField] public bool Attacking = false;
@@ -31,6 +33,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public bool isDashing = false;
     [SerializeField] public bool canDash = true;
     [SerializeField] public bool Jumping = false;
+    [SerializeField] public bool canSecondJump = true;
+    public bool interact = false;
 
 
 
@@ -38,33 +42,50 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public Vector2 moveInput;
     [SerializeField] public float speed;
     [SerializeField] public float JumpForce;
+
+
+    public enum DirectionState
+    {
+        Horizontal, Up, Down
+    }
+
+    public DirectionState currentDirection = DirectionState.Horizontal;
    
     void Awake()
     {
         action = new InputSystem_Actions();
         rb = GetComponent<Rigidbody2D>();
         floorDetector = GetComponentInChildren<FloorDetector>();
+        wallDetector = GetComponentInChildren<WallDetector>();
         hangDetector = GetComponentInChildren<HangDetector>();
         healthsc = GetComponent<AxolotlHealth>();
+
+        DontDestroyOnLoad(gameObject);
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(moveInput.x);
+        
         if (floorDetector.OnFloor & !isDashing) { canDash = true; }
+        if (floorDetector.OnFloor) { canSecondJump = true; }
     }
 
     private void FixedUpdate()
     {
         // Hareket
-        if((moveInput.x >= 0.6 || moveInput.x <= -0.6) && !isDashing)
+        if((moveInput.x >= 0.6 || moveInput.x <= -0.6) && !isDashing && !Attacking)
         {
             rb.linearVelocityX = moveInput.x * speed;
             moving = true;
         }
         else { moving = false; }
+
+        if(rb.linearVelocityY <= -30)
+        {
+            rb.linearVelocityY = -30;
+        }
 
         // Yön kontrol fonksiyonu
         DirectionControl();
@@ -86,6 +107,15 @@ public class PlayerController : MonoBehaviour
                 Hang = false;
             }
             
+        }
+
+        if(wallDetector.onWall && !floorDetector.OnFloor)
+        {
+            if (transform.position.x > wallDetector.WallPosition.x)
+            {
+                IsRight = true;
+            }
+            else { IsRight = false; }
         }
     }
 
@@ -167,6 +197,8 @@ public class PlayerController : MonoBehaviour
         {
             Time.timeScale = 0.1f;
         }
+
+        interact = true;
     }
 
     void OnHangCanceled(InputAction.CallbackContext context)
@@ -177,6 +209,8 @@ public class PlayerController : MonoBehaviour
             rb.linearVelocity = Vector2.zero;
             Hang = true;
         }
+
+        interact = false;
     }
 
     // Attack Input
@@ -191,13 +225,15 @@ public class PlayerController : MonoBehaviour
             StartCoroutine(AttackRoutine());
             if (moveInput.y > 0.4f)
             {
+                currentDirection = DirectionState.Up;
                 StartCoroutine(AttackColliderRoutine(HorizontalAttack, UpAttackPosition));
             }
             else if (moveInput.y < -0.4)
             {
+                currentDirection = DirectionState.Down;
                 StartCoroutine(AttackColliderRoutine(HorizontalAttack, DownAttackPosition));
             }
-            else { StartCoroutine(AttackColliderRoutine(VerticalAttack, AttackPosition)); }
+            else { currentDirection = DirectionState.Horizontal; StartCoroutine(AttackColliderRoutine(VerticalAttack, AttackPosition)); }
         }
         
     }
@@ -210,6 +246,14 @@ public class PlayerController : MonoBehaviour
             rb.AddForce(new Vector2(0, JumpForce), ForceMode2D.Impulse);
             Jumping = true;
             StartCoroutine (JumpRoutine());
+        }
+        else if (canSecondJump)
+        {
+            canSecondJump = false;
+            rb.linearVelocityY = 0;
+            rb.AddForce(new Vector2(0, JumpForce + 5f), ForceMode2D.Impulse);
+            Jumping = true;
+            StartCoroutine(JumpRoutine());
         }
     }
 
@@ -232,7 +276,7 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(0.2f);
         Attacking = false;
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.1f);
         canAttack = true;
     }
 

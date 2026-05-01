@@ -1,53 +1,81 @@
 skeleton.png
-size:1455,649
+size:1924,1037
 filter:Linear,Linear
 pma:true
 Attack Pose 1
-bounds:726,205,305,442
+bounds:2,6,305,442
 offsets:83,0,500,500
-Swing 1
-bounds:2,10,637,722
-offsets:266,23,1000,800
 rotate:90
+Swing 1
+bounds:2,313,637,722
+offsets:266,23,1000,800
 Swing 2
-bounds:1036,514,363,133
+bounds:971,266,363,133
 offsets:322,27,1000,800
 Weapon
-bounds:1165,2,104,229
+bounds:723,21,104,229
 offsets:198,136,500,500
 rotate:90
 arm
-bounds:1310,328,57,131
+bounds:1556,196,57,131
 offsets:207,95,500,500
 rotate:90
 cape
-bounds:1033,222,290,275
+bounds:446,21,290,275
 offsets:72,0,500,500
 rotate:90
+cape 2
+bounds:723,127,246,272
+offsets:138,0,500,500
 ear left
-bounds:1310,387,125,139
+bounds:1541,69,125,139
 offsets:112,293,500,500
 rotate:90
 ear right
-bounds:1310,182,128,144
+bounds:1556,255,128,144
 offsets:302,281,500,500
+eyes front
+bounds:954,9,187,67
+offsets:185,289,500,500
 head
-bounds:726,17,223,186
+bounds:971,78,223,186
 offsets:166,229,500,500
+head front
+bounds:1336,222,218,177
+offsets:167,234,500,500
 leg left
-bounds:1401,514,52,133
+bounds:1682,61,52,133
 offsets:217,0,500,500
 leg right
-bounds:1396,58,53,122
+bounds:1143,2,53,122
 offsets:285,0,500,500
-tail
-bounds:1165,108,112,125
-offsets:160,6,500,500
 rotate:90
+swing down 1
+bounds:641,401,545,634
+offsets:231,59,1000,800
+swing down 2
+bounds:1735,632,187,403
+offsets:244,314,1000,800
+swing up 1
+bounds:1188,401,545,634
+offsets:231,107,1000,800
+swing up 2
+bounds:1735,227,187,403
+offsets:244,83,1000,800
+tail
+bounds:1736,100,112,125
+offsets:160,6,500,500
 tie
-bounds:951,52,151,83
+bounds:1325,8,151,83
 offsets:196,165,500,500
+tie 2
+bounds:1850,92,133,70
+offsets:208,176,500,500
 rotate:90
 torso
-bounds:1036,6,127,214
+bounds:1325,93,127,214
 offsets:216,70,500,500
+rotate:90
+torso front
+bounds:1196,57,127,207
+offsets:214,73,500,500

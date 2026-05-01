@@ -1,0 +1,7 @@
+skeleton.png
+size:108,293
+filter:Linear,Linear
+pma:true
+Hook
+bounds:2,2,104,289
+offsets:95,11,300,300

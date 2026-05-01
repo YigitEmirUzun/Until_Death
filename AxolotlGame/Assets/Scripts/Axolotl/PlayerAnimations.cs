@@ -9,6 +9,9 @@ public class PlayerAnimations : MonoBehaviour
 
     FloorDetector floorDetector;
     PlayerController playerController;
+    WallDetector wallDetector;
+
+    
 
     enum PlayerState
     {
@@ -17,7 +20,8 @@ public class PlayerAnimations : MonoBehaviour
         jump,
         fall,
         attack,
-        dash
+        dash,
+        wall
     }
 
     PlayerState currentState;
@@ -26,42 +30,56 @@ public class PlayerAnimations : MonoBehaviour
     void Awake()
     {
         floorDetector = GetComponentInChildren<FloorDetector>();
+        wallDetector = GetComponentInChildren<WallDetector>();
         playerController = GetComponent<PlayerController>();
 
-        currentState = PlayerState.idle;
+        
+    }
+
+    private void Start()
+    {
+        spineAnim.AnimationState.SetAnimation(0, "Fall", false);
+        currentState = PlayerState.fall;
         lastState = PlayerState.run;
     }
 
     void Update()
     {
-
-        if (playerController.isDashing)
-        {
-            currentState = PlayerState.dash;
-        }
-        if (playerController.Attacking && !playerController.isDashing)
-        {
-            currentState = PlayerState.attack;
-        }
-        else if (playerController.moving && floorDetector.OnFloor && !playerController.Attacking && !playerController.isDashing)
-        {
-            currentState = PlayerState.run;
-        }
-        else if (!playerController.moving && floorDetector.OnFloor && !playerController.Attacking && !playerController.isDashing)
+        if (DialogueManager.Instance.isDialogue)
         {
             currentState = PlayerState.idle;
         }
-        else if (playerController.Jumping && !playerController.isDashing)
+        else
         {
-            currentState = PlayerState.jump;
+            if (playerController.isDashing)
+            {
+                currentState = PlayerState.dash;
+            }
+            else if (playerController.Attacking)
+            {
+                currentState = PlayerState.attack;
+            }
+            else if (wallDetector.onWall && !floorDetector.OnFloor)
+            {
+                currentState = PlayerState.wall;
+            }
+            else if (playerController.moving && floorDetector.OnFloor)
+            {
+                currentState = PlayerState.run;
+            }
+            else if (!playerController.moving && floorDetector.OnFloor)
+            {
+                currentState = PlayerState.idle;
+            }
+            else if (playerController.Jumping && !playerController.isDashing)
+            {
+                currentState = PlayerState.jump;
+            }
+            else if (!floorDetector.OnFloor && !playerController.Jumping && !playerController.Attacking && !playerController.isDashing)
+            {
+                currentState = PlayerState.fall;
+            }
         }
-        else if (!floorDetector.OnFloor && !playerController.Jumping && !playerController.Attacking && !playerController.isDashing)
-        {
-            currentState = PlayerState.fall;
-        }
-
-
-
 
         // Animasyon Degisimi
         if (currentState != lastState)
@@ -79,8 +97,7 @@ public class PlayerAnimations : MonoBehaviour
                     break;
 
                 case PlayerState.attack:
-                    spineAnim.AnimationState.SetAnimation(0, "Attack Sideways", false);
-                    StartCoroutine(AnimationDelay(0f, 1f, PlayerState.attack));
+                    AttackAnimation();
                     break;
 
                 case PlayerState.jump:
@@ -97,6 +114,12 @@ public class PlayerAnimations : MonoBehaviour
                     spineAnim.AnimationState.SetAnimation(0, "Dash", false);
                     StartCoroutine(AnimationDelay(0f, 2f, PlayerState.dash));
                     break;
+
+                case PlayerState.wall:
+                    spineAnim.AnimationState.SetAnimation(0,"Wall", false);
+                    StartCoroutine(AnimationDelay(0f, 1f, PlayerState.dash));
+                    break;
+
             }
 
             lastState = currentState;
@@ -111,6 +134,25 @@ public class PlayerAnimations : MonoBehaviour
         if(currentState == state) { spineAnim.timeScale = scale; }
         
 
+    }
+
+    void AttackAnimation()
+    {
+        switch (playerController.currentDirection)
+        {
+            case PlayerController.DirectionState.Horizontal:
+                spineAnim.AnimationState.SetAnimation(0, "Attack Sideways", false);
+                StartCoroutine(AnimationDelay(0f, 1f, PlayerState.attack));
+                break;
+            case PlayerController.DirectionState.Up:
+                spineAnim.AnimationState.SetAnimation(0, "Attack Up", false);
+                StartCoroutine(AnimationDelay(0f, 1f, PlayerState.attack));
+                break;
+            case PlayerController.DirectionState.Down:
+                spineAnim.AnimationState.SetAnimation(0, "Attack Down", false);
+                StartCoroutine(AnimationDelay(0f, 1f, PlayerState.attack));
+                break;
+        }
     }
 
 }

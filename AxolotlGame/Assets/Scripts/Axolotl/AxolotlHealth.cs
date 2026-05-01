@@ -2,10 +2,8 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AxolotlHealth : MonoBehaviour
-{  // Start is called once before the first execution of Update after the MonoBehaviour is created
-    public Image HealthBar;
-    public Image StaminaBar;
+public class AxolotlHealth : MonoBehaviour ,IDamageable
+{  
     public bool canRegenStamina = true;
     public float staminaRegenTimer = 0;
 
@@ -22,31 +20,38 @@ public class AxolotlHealth : MonoBehaviour
         currentStamina = maxStamina;
         
         lastHealt = currentHealth;
-        lastStamina = currentStamina;
+        lastStamina = currentStamina;       
     }
 
-    // Update is called once per frame
+
     void Update()
     {
-       if((currentStamina < maxStamina) && canRegenStamina)
+        UIManager.Instance.currentHealth = currentHealth;
+        UIManager.Instance.maxHealth = maxHealth;
+        UIManager.Instance.currentStamina = currentStamina;
+        UIManager.Instance.maxStamina = maxStamina;
+
+        if ((currentStamina < maxStamina) && canRegenStamina)
         {
             currentStamina += 25 * Time.deltaTime;
         }
-        
-        HealthBar.fillAmount = Mathf.MoveTowards(HealthBar.fillAmount, currentHealth / maxHealth, 2f * Time.deltaTime);      
-        StaminaBar.fillAmount = Mathf.MoveTowards(StaminaBar.fillAmount, currentStamina / maxStamina, 2f * Time.deltaTime);
 
         if (!canRegenStamina)
         {
             staminaRegenTimer += Time.deltaTime;
         }
 
-        if(staminaRegenTimer >= 1.2f)
+        if(staminaRegenTimer >= 1.5f)
         {
             canRegenStamina = true;
             staminaRegenTimer = 0;
         }
 
+    }
+
+    public void TakeDamage(int damage)
+    {
+        currentHealth -= damage;
     }
 
 }

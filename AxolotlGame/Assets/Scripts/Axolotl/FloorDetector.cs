@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class FloorDetector : MonoBehaviour
 {
-    public bool OnFloor;
+    public bool OnFloor = false;
     public Rigidbody2D PlayerRb;
     void Start()
     {

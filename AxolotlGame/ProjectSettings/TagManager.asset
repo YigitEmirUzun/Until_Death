@@ -10,6 +10,11 @@ TagManager:
   - HangFlower
   - HangDetector
   - PlayerAttack
+  - EnemyBullet
+  - Enemy
+  - NPC
+  - EndScene
+  - SpawnPoint
   layers:
   - Default
   - TransparentFX
@@ -20,9 +25,9 @@ TagManager:
   - Platforms
   - Flowers
   - Characters
-  - 
-  - 
-  - 
+  - EnemyBullets
+  - Enemies
+  - NPC's
   - 
   - 
   - 
@@ -46,6 +51,18 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: BG
+    uniqueID: 498854775
+    locked: 0
+  - name: Platform
+    uniqueID: 1882894819
+    locked: 0
+  - name: Characters
+    uniqueID: 333453627
+    locked: 0
+  - name: UI
+    uniqueID: 2806664753
     locked: 0
   m_RenderingLayers:
   - Default
