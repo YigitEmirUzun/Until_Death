@@ -6,7 +6,7 @@ using Spine.Unity;
 
 public class PlayerController : MonoBehaviour
 {
-
+    public static PlayerController instance;
     public SkeletonAnimation spineAnim;
 
     InputSystem_Actions action;
@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public Transform AttackPosition;
     [SerializeField] public GameObject VerticalAttack;
     [SerializeField] public GameObject HorizontalAttack;
+    public GameObject dashParticule;
 
     [Header("Player Situations")]
     [SerializeField] bool IsRight = true;
@@ -60,7 +61,15 @@ public class PlayerController : MonoBehaviour
         hangDetector = GetComponentInChildren<HangDetector>();
         healthsc = GetComponent<AxolotlHealth>();
 
-        DontDestroyOnLoad(gameObject);
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
         
     }
 
@@ -176,14 +185,14 @@ public class PlayerController : MonoBehaviour
             if (IsRight) 
             {
                 rb.linearVelocityX = 0;
-                rb.AddForce(new Vector2(30, 0), ForceMode2D.Impulse);
+                rb.AddForce(new Vector2(40, 0), ForceMode2D.Impulse);
                 canDash = false;
                 StartCoroutine(DashRoutine(0.2f));
             }
             else
             {
                 rb.linearVelocityX = 0;
-                rb.AddForce(new Vector2(-30, 0), ForceMode2D.Impulse);
+                rb.AddForce(new Vector2(-40, 0), ForceMode2D.Impulse);
                 canDash = false;
                 StartCoroutine(DashRoutine(0.2f));
             }
@@ -260,7 +269,11 @@ public class PlayerController : MonoBehaviour
     // Coroutines
     IEnumerator DashRoutine(float time)
     {
+        spineAnim.skeleton.SetColor(Color.black);
+        dashParticule.SetActive(true);
         yield return new WaitForSeconds(time);
+        spineAnim.skeleton.SetColor(Color.white);
+        dashParticule.SetActive(false);
         isDashing = false;
         rb.linearVelocityX = 0f;
     }

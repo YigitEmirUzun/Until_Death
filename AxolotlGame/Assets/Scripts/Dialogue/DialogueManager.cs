@@ -64,6 +64,7 @@ public class DialogueManager : MonoBehaviour
     {
         isDialogue = false;
         panel.SetActive(false);
+        FindAnyObjectByType<PlayerController>().enabled = true;
     }
 
     private void Update()
@@ -71,10 +72,6 @@ public class DialogueManager : MonoBehaviour
         if (isDialogue)
         {
             FindAnyObjectByType<PlayerController>().enabled = false;
-        }
-        else
-        {
-            FindAnyObjectByType<PlayerController>().enabled=true;
         }
     }
 

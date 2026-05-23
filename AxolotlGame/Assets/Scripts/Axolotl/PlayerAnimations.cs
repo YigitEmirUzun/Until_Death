@@ -1,4 +1,5 @@
 using Spine.Unity;
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -10,6 +11,10 @@ public class PlayerAnimations : MonoBehaviour
     FloorDetector floorDetector;
     PlayerController playerController;
     WallDetector wallDetector;
+
+    public static Action OnJump;
+    public static Action OnDash;
+    public static Action OnAttack;
 
     
 
@@ -98,10 +103,12 @@ public class PlayerAnimations : MonoBehaviour
 
                 case PlayerState.attack:
                     AttackAnimation();
+                    OnAttack?.Invoke();
                     break;
 
                 case PlayerState.jump:
                     spineAnim.AnimationState.SetAnimation(0, "Jump", false);
+                    OnJump?.Invoke();
                     StartCoroutine(AnimationDelay(0f, 1f, PlayerState.jump));
                     break;
 
@@ -112,6 +119,7 @@ public class PlayerAnimations : MonoBehaviour
 
                 case PlayerState.dash:
                     spineAnim.AnimationState.SetAnimation(0, "Dash", false);
+                    OnDash?.Invoke();
                     StartCoroutine(AnimationDelay(0f, 2f, PlayerState.dash));
                     break;
 

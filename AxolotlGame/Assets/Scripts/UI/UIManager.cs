@@ -1,3 +1,4 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,6 +13,8 @@ public class UIManager : MonoBehaviour
     public float currentStamina;
     public float maxHealth;
     public float maxStamina;
+
+    public TextMeshProUGUI counterUI;
 
     private void Awake()
     {
@@ -31,6 +34,11 @@ public class UIManager : MonoBehaviour
     {
         HealthBar.fillAmount = Mathf.MoveTowards(HealthBar.fillAmount, currentHealth / maxHealth, 2f * Time.deltaTime);
         StaminaBar.fillAmount = Mathf.MoveTowards(StaminaBar.fillAmount, currentStamina / maxStamina, 2f * Time.deltaTime);
+
+        int minutes = Mathf.FloorToInt(GameManager.counter / 60);
+        int seconds = Mathf.FloorToInt(GameManager.counter % 60);
+
+        counterUI.text = minutes.ToString("00") + ":" + seconds.ToString("00");
     }
 
 

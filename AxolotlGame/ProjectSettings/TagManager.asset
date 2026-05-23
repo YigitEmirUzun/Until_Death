@@ -15,6 +15,9 @@ TagManager:
   - NPC
   - EndScene
   - SpawnPoint
+  - Trap
+  - BossHitbox
+  - BossDetector
   layers:
   - Default
   - TransparentFX
@@ -28,10 +31,10 @@ TagManager:
   - EnemyBullets
   - Enemies
   - NPC's
-  - 
-  - 
-  - 
-  - 
+  - Trap
+  - PlayerAttackHitbox
+  - BossHitbox
+  - BossDetector
   - 
   - 
   - 

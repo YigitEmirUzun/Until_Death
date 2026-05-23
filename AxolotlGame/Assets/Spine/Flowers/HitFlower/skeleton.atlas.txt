@@ -2,6 +2,6 @@ skeleton.png
 size:249,298
 filter:Linear,Linear
 pma:true
-Hit
+red
 bounds:2,2,245,294
 offsets:18,1,300,300

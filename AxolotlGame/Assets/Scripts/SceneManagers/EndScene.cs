@@ -24,7 +24,7 @@ public class EndScene : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             isSceneEnd = true;
-            player.GetComponent<PlayerController>().enabled = false;
+            collision.GetComponent<PlayerController>().enabled = false;
         }
     }
 

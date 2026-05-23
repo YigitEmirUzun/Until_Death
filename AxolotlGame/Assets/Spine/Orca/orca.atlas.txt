@@ -1,0 +1,79 @@
+orca.png
+size:1921,622
+filter:Linear,Linear
+pma:true
+Arm Left Front
+bounds:1312,57,97,269
+offsets:218,392,1004,1004
+Arm Left Side
+bounds:1411,209,142,233
+offsets:229,407,1004,1004
+rotate:90
+Arm Right Front
+bounds:1214,55,96,271
+offsets:679,391,1004,1004
+Arm Right Side
+bounds:1072,14,140,240
+offsets:628,423,1004,1004
+Chest Front
+bounds:243,232,388,289
+offsets:306,473,1004,1004
+rotate:90
+Chest Side
+bounds:879,256,364,288
+offsets:340,475,1004,1004
+rotate:90
+Flail
+bounds:137,3,220,207
+offsets:613,267,1004,1004
+rotate:90
+Glove
+bounds:1732,2,141,148
+offsets:193,297,1004,1004
+Hand
+bounds:346,14,216,174
+offsets:153,240,1004,1004
+rotate:90
+Head Front
+bounds:522,26,204,252
+offsets:400,674,1004,1004
+rotate:90
+Head Side
+bounds:1404,353,267,257
+offsets:356,644,1004,1004
+rotate:90
+Hip
+bounds:1663,286,235,177
+offsets:403,298,1004,1004
+Leg Left
+bounds:2,202,112,418
+offsets:416,2,1004,1004
+Leg Right
+bounds:116,225,125,395
+offsets:545,11,1004,1004
+Shoulder Left Front
+bounds:1732,152,132,187
+offsets:222,553,1004,1004
+rotate:90
+Shoulder Left Side
+bounds:1570,7,160,200
+offsets:244,523,1004,1004
+Shoulder Right Front
+bounds:2,11,133,189
+offsets:637,551,1004,1004
+Shoulder Right Side
+bounds:1411,5,157,202
+offsets:596,552,1004,1004
+Skirt Front
+bounds:776,2,294,246
+offsets:359,247,1004,1004
+Skirt Side
+bounds:1169,328,292,233
+offsets:382,242,1004,1004
+rotate:90
+Tail
+bounds:534,250,343,370
+offsets:191,59,1004,1004
+Waist
+bounds:1663,465,256,155
+offsets:396,423,1004,1004

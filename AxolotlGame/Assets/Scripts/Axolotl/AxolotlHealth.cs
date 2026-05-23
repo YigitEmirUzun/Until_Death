@@ -1,10 +1,15 @@
+using Spine.Unity;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class AxolotlHealth : MonoBehaviour ,IDamageable
 {  
+    PlayerController playerController;
+    public SkeletonAnimation anim;
+    
     public bool canRegenStamina = true;
+    public bool invincible = false;
     public float staminaRegenTimer = 0;
 
     public float maxHealth;
@@ -16,6 +21,8 @@ public class AxolotlHealth : MonoBehaviour ,IDamageable
     float lastStamina;
     void Start()
     {
+        playerController = GetComponent<PlayerController>();
+        
         currentHealth = maxHealth;
         currentStamina = maxStamina;
         
@@ -33,7 +40,7 @@ public class AxolotlHealth : MonoBehaviour ,IDamageable
 
         if ((currentStamina < maxStamina) && canRegenStamina)
         {
-            currentStamina += 25 * Time.deltaTime;
+            currentStamina += 40 * Time.deltaTime;
         }
 
         if (!canRegenStamina)
@@ -41,7 +48,7 @@ public class AxolotlHealth : MonoBehaviour ,IDamageable
             staminaRegenTimer += Time.deltaTime;
         }
 
-        if(staminaRegenTimer >= 1.5f)
+        if(staminaRegenTimer >= 1f)
         {
             canRegenStamina = true;
             staminaRegenTimer = 0;
@@ -51,7 +58,46 @@ public class AxolotlHealth : MonoBehaviour ,IDamageable
 
     public void TakeDamage(int damage)
     {
-        currentHealth -= damage;
+        if (!playerController.isDashing && !invincible)
+        {
+            currentHealth -= damage;
+            invincible = true;
+            StartCoroutine(HurtRoutine());
+        }
+
+        
+    }
+
+    IEnumerator HurtRoutine()
+    {
+        Time.timeScale = 0.1f;
+        yield return new WaitForSeconds(0.03f);
+        Time.timeScale = 1;
+        anim.skeleton.SetColor(Color.gray);
+        yield return new WaitForSeconds(0.1f);
+        anim.skeleton.SetColor(Color.white);
+        yield return new WaitForSeconds(0.1f);
+        anim.skeleton.SetColor(Color.gray);
+        yield return new WaitForSeconds(0.1f);
+        anim.skeleton.SetColor(Color.white);
+        yield return new WaitForSeconds(0.1f);
+        anim.skeleton.SetColor(Color.gray);
+        yield return new WaitForSeconds(0.1f);
+        anim.skeleton.SetColor(Color.white);
+        yield return new WaitForSeconds(0.1f);
+        anim.skeleton.SetColor(Color.gray);
+        yield return new WaitForSeconds(0.1f);
+        anim.skeleton.SetColor(Color.white);
+        yield return new WaitForSeconds(0.1f);
+        anim.skeleton.SetColor(Color.gray);
+        yield return new WaitForSeconds(0.1f);
+        anim.skeleton.SetColor(Color.white);
+        yield return new WaitForSeconds(0.1f);
+        anim.skeleton.SetColor(Color.gray);
+        yield return new WaitForSeconds(0.1f);
+        anim.skeleton.SetColor(Color.white);
+        yield return new WaitForSeconds(0.1f);
+        invincible = false;
     }
 
 }

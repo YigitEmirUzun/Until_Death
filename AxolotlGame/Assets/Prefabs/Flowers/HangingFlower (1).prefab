@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6746695936327608818}
   - component: {fileID: 566087797562672964}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spot Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,10 +95,10 @@ GameObject:
   - component: {fileID: 2992956257678674073}
   - component: {fileID: 7816152992950421195}
   - component: {fileID: 6875909252552443132}
-  - component: {fileID: 5947182988843199279}
-  m_Layer: 7
+  - component: {fileID: 5968264527021426270}
+  m_Layer: 6
   m_Name: HangingFlower (1)
-  m_TagString: HangFlower
+  m_TagString: Floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113,8 +113,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.99, y: 7.97, z: 0}
-  m_LocalScale: {x: 0.77373, y: 0.77373, z: 0.77373}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6746695936327608818}
   m_Father: {fileID: 0}
@@ -164,7 +164,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1882894819
-  m_SortingLayer: 1
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -5051980161758725304, guid: 26ae9868ad3037a4e90c5b66d9bc6946, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -204,8 +204,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!58 &5947182988843199279
-CircleCollider2D:
+--- !u!61 &5968264527021426270
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -234,9 +234,19 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_Offset: {x: 0.008779526, y: 0.62327886}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.49, y: 2.05}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 2.3671017, y: 0.8034425}
+  m_EdgeRadius: 0

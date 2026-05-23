@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5516534910994556067}
   - component: {fileID: 1304642246121740886}
   - component: {fileID: 2840933723719226965}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Thorn
   m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
@@ -79,9 +79,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 333453627
+  m_SortingLayer: 3
+  m_SortingOrder: 10
   m_Sprite: {fileID: 3074563355350193145, guid: dd7972e0b67e5bb499b3254228b79f84, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
