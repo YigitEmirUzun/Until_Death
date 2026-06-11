@@ -11,6 +11,11 @@ public class BossUIManager : MonoBehaviour
 
     private void Awake()
     {
+        
+    }
+
+    private void Start()
+    {
         healthSc = boss.GetComponent<BossHealth>();
         BossHealth = healthSc.Health;
     }

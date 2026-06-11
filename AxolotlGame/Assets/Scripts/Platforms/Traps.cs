@@ -7,7 +7,8 @@ public class Traps : MonoBehaviour
         IDamageable damageable = collision.gameObject.GetComponentInParent<IDamageable>();
         if (damageable != null && collision.gameObject.CompareTag("Player"))
         {
-            damageable.TakeDamage(30);
+            damageable.TakeDamage(20);
+            Debug.Log("Çarptý!");
         }
     }
 }

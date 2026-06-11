@@ -1,5 +1,6 @@
 using Spine.Unity;
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -54,6 +55,12 @@ public class AxolotlHealth : MonoBehaviour ,IDamageable
             staminaRegenTimer = 0;
         }
 
+        if(currentHealth <= 0f)
+        {
+            StartCoroutine(DeadRoutine());
+            playerController.enabled = false;
+        }
+
     }
 
     public void TakeDamage(int damage)
@@ -71,7 +78,7 @@ public class AxolotlHealth : MonoBehaviour ,IDamageable
     IEnumerator HurtRoutine()
     {
         Time.timeScale = 0.1f;
-        yield return new WaitForSeconds(0.03f);
+        yield return new WaitForSeconds(0.01f);
         Time.timeScale = 1;
         anim.skeleton.SetColor(Color.gray);
         yield return new WaitForSeconds(0.1f);
@@ -98,6 +105,12 @@ public class AxolotlHealth : MonoBehaviour ,IDamageable
         anim.skeleton.SetColor(Color.white);
         yield return new WaitForSeconds(0.1f);
         invincible = false;
+    }
+
+    IEnumerator DeadRoutine()
+    {
+        yield return new WaitForSeconds(1f);
+        Debug.Log("Bitti");
     }
 
 }

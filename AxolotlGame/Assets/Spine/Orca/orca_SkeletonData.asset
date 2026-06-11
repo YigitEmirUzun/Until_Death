@@ -24,38 +24,8 @@ MonoBehaviour:
     multiplyMaterials: []
     screenMaterials: []
   skeletonDataModifiers: []
-  fromAnimation:
-  - Attack Charge
-  - Walk
-  - Idle
-  - Attack
-  - Walk
-  - Idle
-  - Dash Charge
-  - Dash
-  - Dash Charge
-  - Dive
-  toAnimation:
-  - Attack
-  - Attack Charge
-  - Attack Charge
-  - Idle
-  - Dash Charge
-  - Dash Charge
-  - Dash
-  - Idle
-  - Idle
-  - Dash Charge
-  duration:
-  - 0
-  - 0
-  - 0
-  - 0.1
-  - 0.1
-  - 0.1
-  - 0.1
-  - 0.1
-  - 0
-  - 0
+  fromAnimation: []
+  toAnimation: []
+  duration: []
   defaultMix: 0
   controller: {fileID: 0}

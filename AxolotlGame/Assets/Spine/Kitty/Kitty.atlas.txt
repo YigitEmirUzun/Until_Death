@@ -1,0 +1,31 @@
+Kitty.png
+size:367,317
+filter:Linear,Linear
+pma:true
+Arm
+bounds:267,10,40,86
+offsets:229,145,504,504
+rotate:90
+Cape
+bounds:2,106,149,209
+offsets:139,79,504,504
+Ear Left
+bounds:180,2,85,140
+offsets:151,294,504,504
+Ear Right
+bounds:267,52,70,98
+offsets:270,334,504,504
+rotate:90
+Head
+bounds:153,144,171,145
+rotate:90
+Leg Left
+bounds:300,217,52,98
+offsets:204,75,504,504
+Leg Right
+bounds:300,124,41,91
+offsets:250,84,504,504
+Torso
+bounds:2,7,97,176
+offsets:202,121,504,504
+rotate:90

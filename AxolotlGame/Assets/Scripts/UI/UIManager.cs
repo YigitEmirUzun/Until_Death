@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
@@ -29,6 +30,16 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
 
     private void Update()
     {
@@ -39,6 +50,14 @@ public class UIManager : MonoBehaviour
         int seconds = Mathf.FloorToInt(GameManager.counter % 60);
 
         counterUI.text = minutes.ToString("00") + ":" + seconds.ToString("00");
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "MainMenu" || scene.name == "GameEnd")
+        {
+            Destroy(gameObject);
+        }
     }
 
 

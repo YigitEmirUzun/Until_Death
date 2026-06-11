@@ -23,6 +23,8 @@ public class EndScene : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            color.a = 0;
+            darkScreen.SetActive(true);
             isSceneEnd = true;
             collision.GetComponent<PlayerController>().enabled = false;
         }
@@ -48,6 +50,7 @@ public class EndScene : MonoBehaviour
     IEnumerator NextSceneRoutine()
     {
         yield return new WaitForSeconds(2);
+        player.GetComponent<PlayerController>().enabled = true;
         SceneManager.LoadScene(nextScene);
     }
 

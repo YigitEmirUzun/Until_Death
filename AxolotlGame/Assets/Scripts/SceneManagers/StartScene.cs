@@ -10,10 +10,11 @@ public class StartScene : MonoBehaviour
     {
         sr = GetComponent<SpriteRenderer>();
         color = sr.color;
+        isStart = true;
     }
     void Start()
     {
-        
+        isStart = true;
     }
 
     // Update is called once per frame
@@ -21,7 +22,7 @@ public class StartScene : MonoBehaviour
     {
         if (isStart)
         {
-            color.a -= 0.1f * Time.deltaTime;
+            color.a -= 0.2f * Time.deltaTime;
             sr.color = color;
 
         }

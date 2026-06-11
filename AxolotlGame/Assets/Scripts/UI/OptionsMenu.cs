@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class OptionsMenu : MonoBehaviour
@@ -44,6 +45,6 @@ public class OptionsMenu : MonoBehaviour
 
     public void Windowed()
     {
-        Screen.fullScreenMode = FullScreenMode.Windowed;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

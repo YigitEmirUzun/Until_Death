@@ -18,6 +18,8 @@ TagManager:
   - Trap
   - BossHitbox
   - BossDetector
+  - EnemyDetector
+  - IceBall
   layers:
   - Default
   - TransparentFX
@@ -35,8 +37,8 @@ TagManager:
   - PlayerAttackHitbox
   - BossHitbox
   - BossDetector
-  - 
-  - 
+  - EnemyDetector
+  - IceBall
   - 
   - 
   - 
@@ -63,6 +65,9 @@ TagManager:
     locked: 0
   - name: Characters
     uniqueID: 333453627
+    locked: 0
+  - name: ForeGround
+    uniqueID: 89715127
     locked: 0
   - name: UI
     uniqueID: 2806664753

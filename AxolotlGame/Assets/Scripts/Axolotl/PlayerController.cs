@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Spine.Unity;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -26,7 +27,7 @@ public class PlayerController : MonoBehaviour
     public GameObject dashParticule;
 
     [Header("Player Situations")]
-    [SerializeField] bool IsRight = true;
+    [SerializeField] public bool IsRight = true;
     [SerializeField] bool Hang = false;
     [SerializeField] public bool moving;
     [SerializeField] public bool Attacking = false;
@@ -84,7 +85,7 @@ public class PlayerController : MonoBehaviour
     private void FixedUpdate()
     {
         // Hareket
-        if((moveInput.x >= 0.6 || moveInput.x <= -0.6) && !isDashing && !Attacking)
+        if((moveInput.x >= 0.6 || moveInput.x <= -0.6) && !isDashing)
         {
             rb.linearVelocityX = moveInput.x * speed;
             moving = true;
@@ -128,8 +129,17 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name == "MainMenu" || scene.name == "GameEnd") 
+        {
+            Destroy(gameObject);
+        }
+    }
+
     private void OnEnable()
     {
+        SceneManager.sceneLoaded += OnSceneLoaded;
         // Inputlarý ekleme
         action.Player.Enable();
 
@@ -144,6 +154,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnDisable()
     {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
         // Inputlarý disable etme
         action.Player.Disable();
 

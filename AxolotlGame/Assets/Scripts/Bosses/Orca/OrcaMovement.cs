@@ -7,7 +7,9 @@ public class OrcaMovement : MonoBehaviour
 {
     GameObject player;
     BossRangeDetector detector;
+    BossHealth orcaHealth;
     public Rigidbody2D rb;
+    public int phase = 1;
 
     public float speed = 5;
 
@@ -44,6 +46,7 @@ public class OrcaMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.Find("Axolotl");
         detector = GetComponentInChildren<BossRangeDetector>();
+        orcaHealth = GetComponent<BossHealth>();
         specialAttackType.Add(AttackType.DashAttack);
         specialAttackType.Add(AttackType.DiveAttack);
     }
@@ -51,14 +54,25 @@ public class OrcaMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        playerInRange = detector.playerInRange;
-        Walking();
-        Attack();
+        if(phase == 1)
+        {
+            playerInRange = detector.playerInRange;
+            Walking();
+            Attack();
+        }
+
+        if(orcaHealth.Health <= 0 && phase == 1)
+        {
+            phase = 0;
+        }
     }
 
     private void FixedUpdate()
     {
-        Direction();
+        if(phase == 1)
+        {
+            Direction();
+        }
     }
 
     void Direction()

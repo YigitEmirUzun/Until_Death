@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BossHealth : MonoBehaviour, IDamageable
 {
-    public float Health = 1000;
+    public float Health = 400;
     public SkeletonAnimation anim;
     public ParticleSystem bloodParticle;
 
@@ -16,7 +16,7 @@ public class BossHealth : MonoBehaviour, IDamageable
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void TakeDamage(int damage)
@@ -24,6 +24,7 @@ public class BossHealth : MonoBehaviour, IDamageable
         Health -= damage;
         bloodParticle.Emit(8);
         StartCoroutine(HurtRoutine());
+        Debug.Log("Boss Hitted");
     }
 
     IEnumerator HurtRoutine()

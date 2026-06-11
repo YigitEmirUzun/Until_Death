@@ -1,0 +1,50 @@
+Cat_Boss.png
+size:878,591
+filter:Linear,Linear
+pma:true
+Arm Left
+bounds:299,436,153,334
+offsets:296,364,1004,1004
+rotate:90
+Arm Right
+bounds:453,162,148,333
+offsets:561,375,1004,1004
+rotate:90
+Crotch
+bounds:635,443,195,146
+offsets:413,355,1004,1004
+Ear Left
+bounds:755,312,95,129
+offsets:446,855,1004,1004
+Ear Right
+bounds:788,202,82,108
+offsets:559,855,1004,1004
+Head
+bounds:2,10,194,176
+offsets:451,740,1004,1004
+Hip
+bounds:198,15,171,176
+offsets:425,430,1004,1004
+rotate:90
+Leg Left
+bounds:2,188,110,449
+offsets:398,0,1004,1004
+rotate:90
+Leg Right
+bounds:299,327,107,454
+offsets:509,2,1004,1004
+rotate:90
+Neck
+bounds:376,2,163,158
+offsets:440,710,1004,1004
+Shoulder Left
+bounds:541,19,141,167
+offsets:295,629,1004,1004
+rotate:90
+Shoulder Right
+bounds:710,20,140,166
+offsets:569,640,1004,1004
+rotate:90
+Torso
+bounds:2,300,295,289
+offsets:364,521,1004,1004

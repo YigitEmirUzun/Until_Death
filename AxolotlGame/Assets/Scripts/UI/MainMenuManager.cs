@@ -15,7 +15,7 @@ public class MainMenuManager : MonoBehaviour
     public GameObject optionsFirstButton;
     public void StartTutorial()
     {
-        SceneManager.LoadScene("Tutorial");
+        SceneManager.LoadScene("StartCutscene");
     }
 
     public void ExitGame()

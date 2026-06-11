@@ -1,0 +1,28 @@
+fish.png
+size:391,577
+filter:Linear,Linear
+pma:true
+Arm
+bounds:2,2,68,121
+offsets:212,105,504,504
+rotate:90
+Head
+bounds:2,72,219,190
+offsets:164,240,504,504
+Leg Left
+bounds:260,5,50,109
+offsets:221,0,504,504
+rotate:90
+Leg Right
+bounds:125,5,50,133
+offsets:284,3,504,504
+rotate:90
+Sword
+bounds:340,307,49,268
+offsets:2,2,53,272
+Torso
+bounds:223,57,154,205
+offsets:188,77,504,504
+fishswing
+bounds:2,264,336,311
+offsets:97,104,500,500
